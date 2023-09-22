@@ -1,0 +1,145 @@
+\documentclass[12pt]{article}
+
+%% preamble: Keep it clean; only include those you need
+\usepackage{amsmath}
+\usepackage[margin = 1in]{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{natbib}
+
+% for space filling
+\usepackage{lipsum}
+% highlighting hyper links
+\usepackage[colorlinks=true, citecolor=blue]{hyperref}
+
+
+%% meta data
+
+\title{STAT 3494W Practicing Latex HW2 Paper}
+\author{Ashley Merritt\\
+  Department of Statistics\\
+  University of Connecticut
+}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Here is the abstract. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nam libero justo laoreet sit amet cursus sit amet dictum. Nulla malesuada pellentesque elit eget gravida cum sociis. Eget mauris pharetra et ultrices neque ornare aenean euismod. Aliquet sagittis id consectetur purus ut faucibus pulvinar elementum. Eu consequat ac felis donec. Felis bibendum ut tristique et egestas quis. Nibh praesent tristique magna sit amet. Arcu felis bibendum ut tristique. Lobortis mattis aliquam faucibus purus in. Amet consectetur adipiscing elit duis tristique sollicitudin. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Ac turpis egestas sed tempus. Purus sit amet luctus venenatis lectus. Tellus in metus vulputate eu scelerisque felis imperdiet. Phasellus egestas tellus rutrum tellus pellentesque eu. Consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo. Arcu cursus euismod quis viverra nibh. Aliquam eleifend mi in nulla posuere sollicitudin. Non curabitur gravida arcu ac tortor dignissim.
+\end{abstract}
+
+
+\section{Introduction}
+\label{sec:intro}
+
+Use this section to answer three questions:
+Why is the topic important/interesting?
+What has been done on this topic in the literature?
+What is your contribution?
+
+\lipsum[1-3]
+
+To cite a reference, here are examples.
+\citet{White1952Web} did something ... \lipsum[1]
+
+A lot of work has been done \citep[e.g.,][]{White1952Web}.
+\lipsum[2]
+Some parametric bootstrap sample size approach was proposed by
+\citet{Grenier2019pickleball}. 
+
+
+% roadmap
+The rest of the paper is organized as follows.
+The data will be presented in Section~\ref{sec:data}.
+The methods are described in Section~\ref{sec:meth}.
+The results are reported in Section~\ref{sec:resu}.
+A discussion concludes in Section~\ref{sec:disc}.
+
+
+\section{Data}
+\label{sec:data}
+
+Use this section to describe the data that helps to answer your research
+questions. Recall Acceleration Formula
+\begin{equation}
+  \label{eq:mc2}
+  F = ma,
+\end{equation}
+which states that the force (F) is the mass (m) multiplied by the acceleration (a).
+\lipsum{1}
+
+\section{Methods}
+\label{sec:meth}
+
+Use this section to present the methodologies that will generate results by
+analyzing the data. Here we will determine the surface area of a cylinder by using the radius (r) and height (h). Then its surface area is
+\begin{equation}
+  \label{eq:area}
+  \ 2\pi r^2 + 2\pi rh.
+\end{equation}
+
+Equation~\eqref{eq:area} is interesting. \lipsum[1-4]
+
+Sometimes I don't want an equation to be numbered such as this one:
+\[
+S = k \log W,
+\]
+which is the third law of thermodynamics. You can also include equations inline with texts. We can include a simple algebraic equation like this \ x + 2x within written text.
+
+
+
+\section{Results}
+\label{sec:resu}
+
+Table~\ref{tab:rv} summarizes some information about the time it takes people to receive a certain score.
+\lipsum[1-4]
+
+\begin{table}[ht]
+  \caption{This is my first table.}
+  \label{tab:rv}
+\centering
+\begin{tabular}{rrr}
+  \hline
+count & time & score \\ 
+  \hline
+1.000 & 4 & 17.000 \\ 
+  2.000 & 4 & 22.000 \\ 
+  3.000 & 9 & 23.000 \\ 
+  4.000 & 6 & 110.000 \\ 
+  5.000 & 3 & 15.000 \\ 
+  6.000 & 5 & 80.000 \\ 
+  7.000 & 0 & 36.000 \\ 
+  8.000 & 8 & 28.000 \\ 
+  9.000 & 1 & 49.000 \\ 
+  10.000 & 4 & 908.000 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+Figure~\ref{fig:iris} shows the sepal width against the sepal length for this dataset.
+
+\begin{figure}[tbp]
+  \centering
+  \includegraphics[width=\textwidth]{iris.png}
+  \caption{This is my first figure.}
+  \label{fig:iris}
+\end{figure}
+
+\section{Discussion}
+\label{sec:disc}
+
+What are the main contributions again?
+
+What are the limitations of this study?
+
+What are worth pursuing further in the future?
+
+\ We can use in-text equations to explain how certain information was calculated and developed. In the discussion we can directly show the reader where we got our answer by including an equation like this $30x+ x^2$ in the same line as our text. 
+
+\lipsum[1-2]
+Information about astronomy and statistics. \citep{ZhangZhao2015Astronomy}.
+
+\bibliography{refs}
+\bibliographystyle{mcap}
+
+\end{document}
